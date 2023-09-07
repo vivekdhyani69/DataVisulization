@@ -1,9 +1,9 @@
-// models/DataChart.js
+  // models/DataChart.js
 const mongoose = require('mongoose');
 
 const dataChartSchema = new mongoose.Schema({
   end_year: {
-    type : String
+    type : Number
    },
   intensity: {
     type : Number
@@ -24,7 +24,7 @@ const dataChartSchema = new mongoose.Schema({
     type : String
    },
   start_year: {
-    type : String
+    type : Number
    },
   impact: {
     type : String
@@ -56,6 +56,6 @@ const dataChartSchema = new mongoose.Schema({
   
 });
 
-const DataChart = mongoose.model('dataChart', dataChartSchema);
+const DataChart = mongoose.model('datacharts', dataChartSchema);
 
 module.exports = DataChart;
